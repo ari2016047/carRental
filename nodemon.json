@@ -1,0 +1,7 @@
+{
+    "env": {
+        "MONGO_USER": "arihant",
+        "MONGO_PASSWORD": "7U49yAFSlnXb7S5h",
+        "MONGO_DEFAULT_DATABASE": "carRental"
+    }
+}
