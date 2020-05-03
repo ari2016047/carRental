@@ -1,0 +1,1052 @@
+{
+	"info": {
+		"_postman_id": "20dbced0-6c31-4e35-856c-bc017be4918c",
+		"name": "project1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Cars",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"model_val\": \"Mercedes\",\n\t\"vehicle_no\":\"UPHFH&78\",\n\t\"capacity\":6,\n\t\"rent\":50000,\n\t\"bookings\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://car-rental-white-panda.herokuapp.com/add-cars",
+					"protocol": "https",
+					"host": [
+						"car-rental-white-panda",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"add-cars"
+					]
+				},
+				"description": "Add a car"
+			},
+			"response": [
+				{
+					"name": "add car1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"model_val\": \"BMW\",\n\t\"vehicle_no\":\"havjbdkakij\",\n\t\"capacity\":6,\n\t\"rent\":20000,\n\t\"bookings\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://car-rental-white-panda.herokuapp.com/add-cars",
+							"protocol": "https",
+							"host": [
+								"car-rental-white-panda",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"add-cars"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "175"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"af-NsuemKzMAvKucw+qolgXm4r90mg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 May 2020 01:45:20 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"New Car added Successfully!\",\n    \"Car\": {\n        \"_id\": \"5eae2230ef38cc0004ad1327\",\n        \"model_val\": \"BMW\",\n        \"vehicle_no\": \"havjbdkakij\",\n        \"capacity\": 6,\n        \"rent\": 20000,\n        \"bookings\": [],\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "add car2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"model_val\": \"Mercedes\",\n\t\"vehicle_no\":\"UPHFH&78\",\n\t\"capacity\":6,\n\t\"rent\":50000,\n\t\"bookings\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://car-rental-white-panda.herokuapp.com/add-cars",
+							"protocol": "https",
+							"host": [
+								"car-rental-white-panda",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"add-cars"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "177"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"b1-JYzB3jRTT42Kz/SpjrV6jzF0eW0\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 May 2020 01:51:48 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"New Car added Successfully!\",\n    \"Car\": {\n        \"_id\": \"5eae23b4ef38cc0004ad1328\",\n        \"model_val\": \"Mercedes\",\n        \"vehicle_no\": \"UPHFH&78\",\n        \"capacity\": 6,\n        \"rent\": 50000,\n        \"bookings\": [],\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "All cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://car-rental-white-panda.herokuapp.com/cars",
+					"protocol": "https",
+					"host": [
+						"car-rental-white-panda",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"cars"
+					]
+				},
+				"description": "add a car"
+			},
+			"response": [
+				{
+					"name": "view all cars(no filters)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://car-rental-white-panda.herokuapp.com/cars",
+							"protocol": "https",
+							"host": [
+								"car-rental-white-panda",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "259"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"103-C6VAUbWkRPG1YFkVk2EFur2ppuo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 May 2020 01:56:54 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"5eae2230ef38cc0004ad1327\",\n        \"model_val\": \"BMW\",\n        \"vehicle_no\": \"havjbdkakij\",\n        \"capacity\": 6,\n        \"rent\": 20000,\n        \"bookings\": [],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"5eae23b4ef38cc0004ad1328\",\n        \"model_val\": \"Mercedes\",\n        \"vehicle_no\": \"UPHFH&78\",\n        \"capacity\": 6,\n        \"rent\": 50000,\n        \"bookings\": [],\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Book a available car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"customer_name\": \"Abhinav\",\n\t\"mobile\": 788333366,\n\t\"start_date\": \"05-06-2020\",\n\t\"end_date\": \"05-09-2020\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://car-rental-white-panda.herokuapp.com/book-cars/5eae2230ef38cc0004ad1327",
+					"protocol": "https",
+					"host": [
+						"car-rental-white-panda",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"book-cars",
+						"5eae2230ef38cc0004ad1327"
+					]
+				},
+				"description": "Book available car"
+			},
+			"response": [
+				{
+					"name": "Book a BMV by user2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"customer_name\": \"Abhinav\",\n\t\"mobile\": 788333366,\n\t\"start_date\": \"05-06-2020\",\n\t\"end_date\": \"05-09-2020\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://car-rental-white-panda.herokuapp.com/book-cars/5eae2230ef38cc0004ad1327",
+							"protocol": "https",
+							"host": [
+								"car-rental-white-panda",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"book-cars",
+								"5eae2230ef38cc0004ad1327"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "208"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"d0-J2B3IxDqiWfr7jPZAB9EQcKXkjo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 May 2020 02:02:05 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Car Booked Successfully!\",\n    \"model_val\": \"BMW\",\n    \"vehicle_no\": \"havjbdkakij\",\n    \"booked_by\": \"Abhinav\",\n    \"mobile_no\": 788333366,\n    \"issue_date\": \"2020-05-06T00:00:00.000Z\",\n    \"return_date\": \"2020-05-09T00:00:00.000Z\"\n}"
+				},
+				{
+					"name": "Book a BMV by user1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"customer_name\": \"Arihant\",\n\t\"mobile\": 9988333366,\n\t\"start_date\": \"05-01-2020\",\n\t\"end_date\": \"05-05-2020\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://car-rental-white-panda.herokuapp.com/book-cars/5eae2230ef38cc0004ad1327",
+							"protocol": "https",
+							"host": [
+								"car-rental-white-panda",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"book-cars",
+								"5eae2230ef38cc0004ad1327"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "209"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"d1-oDi/pDgSkhehM2lzr4vDH6rcJao\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 May 2020 02:00:33 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Car Booked Successfully!\",\n    \"model_val\": \"BMW\",\n    \"vehicle_no\": \"havjbdkakij\",\n    \"booked_by\": \"Arihant\",\n    \"mobile_no\": 9988333366,\n    \"issue_date\": \"2020-05-01T00:00:00.000Z\",\n    \"return_date\": \"2020-05-05T00:00:00.000Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Filter cars",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"capacity\":6,\n\t\"start_date\":\"05-07-2020\",\n\t\"end_date\":\"05-20-2020\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://car-rental-white-panda.herokuapp.com/filter-cars",
+					"protocol": "https",
+					"host": [
+						"car-rental-white-panda",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"filter-cars"
+					]
+				},
+				"description": "filter the cars"
+			},
+			"response": [
+				{
+					"name": "Filter1(on date)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"capacity\":6,\n\t\"start_date\":\"05-07-2020\",\n\t\"end_date\":\"05-20-2020\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://car-rental-white-panda.herokuapp.com/filter-cars",
+							"protocol": "https",
+							"host": [
+								"car-rental-white-panda",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"filter-cars"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "168"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"a8-0mg88rB0sQ8wnzmYTPX5ghVMFRk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 May 2020 02:04:16 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Available cars:\",\n    \"cars\": [\n        {\n            \"_id\": \"5eae23b4ef38cc0004ad1328\",\n            \"model_val\": \"Mercedes\",\n            \"vehicle_no\": \"UPHFH&78\",\n            \"capacity\": 6,\n            \"rent\": 50000,\n            \"bookings\": [],\n            \"__v\": 0\n        }\n    ]\n}"
+				},
+				{
+					"name": "filter3(capacity)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"capacity\":4,\n\t\"start_date\":\"04-03-2020\",\n\t\"end_date\":\"04-20-2020\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://car-rental-white-panda.herokuapp.com/filter-cars",
+							"protocol": "https",
+							"host": [
+								"car-rental-white-panda",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"filter-cars"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"27-1fNZp/1uOls1otKxf18sNUM0Aps\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 May 2020 02:06:22 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Available cars:\",\n    \"cars\": []\n}"
+				},
+				{
+					"name": "filter2(on date)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"capacity\":6,\n\t\"start_date\":\"04-03-2020\",\n\t\"end_date\":\"04-20-2020\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://car-rental-white-panda.herokuapp.com/filter-cars",
+							"protocol": "https",
+							"host": [
+								"car-rental-white-panda",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"filter-cars"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "560"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"230-Cf9UK66GLev9YsiFGYr8uTrgn1o\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 May 2020 02:05:42 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Available cars:\",\n    \"cars\": [\n        {\n            \"_id\": \"5eae2230ef38cc0004ad1327\",\n            \"model_val\": \"BMW\",\n            \"vehicle_no\": \"havjbdkakij\",\n            \"capacity\": 6,\n            \"rent\": 20000,\n            \"bookings\": [\n                {\n                    \"_id\": \"5eae25c0ef38cc0004ad132a\",\n                    \"customer_name\": \"Arihant\",\n                    \"mobile\": 9988333366,\n                    \"start_date\": 1588291200000,\n                    \"end_date\": 1588636800000\n                },\n                {\n                    \"_id\": \"5eae261def38cc0004ad132c\",\n                    \"customer_name\": \"Abhinav\",\n                    \"mobile\": 788333366,\n                    \"start_date\": 1588723200000,\n                    \"end_date\": 1588982400000\n                }\n            ],\n            \"__v\": 2\n        },\n        {\n            \"_id\": \"5eae23b4ef38cc0004ad1328\",\n            \"model_val\": \"Mercedes\",\n            \"vehicle_no\": \"UPHFH&78\",\n            \"capacity\": 6,\n            \"rent\": 50000,\n            \"bookings\": [],\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Car and its Currently Active Booking",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://car-rental-white-panda.herokuapp.com/cars/5eae23b4ef38cc0004ad1328",
+					"protocol": "https",
+					"host": [
+						"car-rental-white-panda",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"cars",
+						"5eae23b4ef38cc0004ad1328"
+					]
+				},
+				"description": "get specific car + its active bookings"
+			},
+			"response": [
+				{
+					"name": "Car and its Currently Active Booking(for BMW)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://car-rental-white-panda.herokuapp.com/cars/5eae2230ef38cc0004ad1327",
+							"protocol": "https",
+							"host": [
+								"car-rental-white-panda",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"cars",
+								"5eae2230ef38cc0004ad1327"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "293"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"125-SueSIqi3ifOURcc0T0QABrNUu5A\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 May 2020 02:11:18 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Car and its currently Active Booking Details\",\n    \"model\": \"BMW\",\n    \"vehicle_no\": \"havjbdkakij\",\n    \"capacity\": 6,\n    \"rent_per_day\": 20000,\n    \"current_active_booking\": [\n        {\n            \"_id\": \"5eae25c0ef38cc0004ad132a\",\n            \"customer_name\": \"Arihant\",\n            \"mobile\": 9988333366,\n            \"start_date\": 1588291200000,\n            \"end_date\": 1588636800000\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete a Car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://car-rental-white-panda.herokuapp.com/cars/delete/5eae2230ef38cc0004ad1327",
+					"protocol": "https",
+					"host": [
+						"car-rental-white-panda",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"cars",
+						"delete",
+						"5eae2230ef38cc0004ad1327"
+					]
+				},
+				"description": "Delete a car based on bookings"
+			},
+			"response": [
+				{
+					"name": "Delete2(Active/future booking)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://car-rental-white-panda.herokuapp.com/cars/delete/5eae2230ef38cc0004ad1327",
+							"protocol": "https",
+							"host": [
+								"car-rental-white-panda",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"cars",
+								"delete",
+								"5eae2230ef38cc0004ad1327"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "60"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"3c-UUJC97b7+iuLVOrHNtXIQk8wt9c\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 May 2020 02:21:05 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Deletion failed due to current/future bookings\"\n}"
+				},
+				{
+					"name": "Deletion1(no active/future bookings)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://car-rental-white-panda.herokuapp.com/cars/delete/5eae23b4ef38cc0004ad1328",
+							"protocol": "https",
+							"host": [
+								"car-rental-white-panda",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"cars",
+								"delete",
+								"5eae23b4ef38cc0004ad1328"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"26-wblB1Ly+8wVbAclPxbB0XtHq/TY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 May 2020 02:19:22 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Car Deleted Successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update a Car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"model_val\":\"Mercedes-Benz\",\n\t\"vehicle_no\":\"BH2345678\",\n\t\"capacity\":6,\n\t\"rent\":75000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://car-rental-white-panda.herokuapp.com/cars/update/5eae2a70ef38cc0004ad132d",
+					"protocol": "https",
+					"host": [
+						"car-rental-white-panda",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"cars",
+						"update",
+						"5eae2a70ef38cc0004ad132d"
+					]
+				},
+				"description": "Updating a car items depending on bookings"
+			},
+			"response": [
+				{
+					"name": "Update2(No active/future bookings)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"model_val\":\"Mercedes-Benz\",\n\t\"vehicle_no\":\"BH2345678\",\n\t\"capacity\":6,\n\t\"rent\":75000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://car-rental-white-panda.herokuapp.com/cars/update/5eae2a70ef38cc0004ad132d",
+							"protocol": "https",
+							"host": [
+								"car-rental-white-panda",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"cars",
+								"update",
+								"5eae2a70ef38cc0004ad132d"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"26-HOtDido3SWmdkOPuL3r77wcUARU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 May 2020 02:27:26 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Car Updated Successfully\"\n}"
+				},
+				{
+					"name": "Update1(Active/future bookings)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"model_val\":\"BMW-X5\",\n\t\"vehicle_no\":\"BH2345678\",\n\t\"capacity\":6,\n\t\"rent\":25000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://car-rental-white-panda.herokuapp.com/cars/update/5eae2230ef38cc0004ad1327",
+							"protocol": "https",
+							"host": [
+								"car-rental-white-panda",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"cars",
+								"update",
+								"5eae2230ef38cc0004ad1327"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "60"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"3c-CZ9CHCl5wWpAXGu7TqCF5rAoHUs\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 May 2020 02:23:54 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Updation failed due to current/future bookings\"\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
